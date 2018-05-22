@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#745791"
+    tools:context=".Quiz">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:text="Score: 0"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <VideoView
+        android:layout_below="@id/title"
+        android:id="@+id/imageView2"
+        android:layout_width="292dp"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Replay"
+        android:layout_width="171dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView2"
+        android:background="#135871"
+        android:onClick="goReplay"
+        android:text="replay"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Replay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#51a850"
+        android:onClick="answer"
+        android:text="Alphabets"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#a5b326"
+        android:onClick="answer"
+        android:text="Numbers"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#48ad9b"
+        android:onClick="answer"
+        android:text="Basic Signs"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#ae7e5a"
+        android:onClick="answer"
+        android:text="Greetings / Dialogue"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#135871"
+        android:onClick="goMenu"
+        android:text="Menu"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a5b326"
+    tools:context=".Search">
+
+    <VideoView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageView2"
+        android:layout_width="292dp"
+        android:layout_height="290dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <Button
+        android:id="@+id/Replay"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView2"
+        android:background="#135871"
+        android:onClick="goReplay"
+        android:text="replay"
+        android:textColor="@android:color/white"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Replay"
+       >
+
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/text"
+            android:background="#135871"
+            android:onClick="goSearch"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:text="*This will return the best possible video that matches the keyword you have entered." />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#135871"
+        android:onClick="goMenu"
+        android:text="Menu"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
