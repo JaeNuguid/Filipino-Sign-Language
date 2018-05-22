@@ -16,6 +16,6 @@
 ## Where?
 - You can download this app for FREE on [Google Play Store](https://play.google.com/store/apps/details?id=com.bcs.fsl.filipinosignlanguage).
 
-
+<br/> 
 * If anyone wants to fork or copy the project files including the video files, you may request by contacting me.
 * This project was made in a rush, no coding standards were followed and it needs a lot of refactoring.
